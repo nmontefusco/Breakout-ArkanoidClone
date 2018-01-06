@@ -1,5 +1,6 @@
 #include "ball.h"
 #include "Paddle.h"
+#include "Collision.h"
 
 const sf::Color Ball::defColor{ sf::Color::Red };
 const sf::Color Paddle::defColor{ sf::Color::Red };
@@ -32,7 +33,9 @@ int main()
 
 		ball.update();
 		paddle.update();
-
+		
+		solvePaddleBallCollision(paddle,ball);
+		
 		ball.draw(window);
 		paddle.draw(window);
 

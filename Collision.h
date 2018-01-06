@@ -2,7 +2,7 @@
 
 /* 
 	We define a template to detect when two game objects collide, the reference types are for 
-	the member of left,right,top,bottom, making it practical for ball and paddle to use.
+	the member of left,right,top,bottom, making it accessible for ball and paddle to use.
 */
 
 	
